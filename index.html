@@ -9,8 +9,6 @@
 body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:#0d1117;color:#e6edf3;font-size:15px;line-height:1.8}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
-
-/* ===== 侧边栏 ===== */
 #sidebar{position:fixed;top:0;left:0;width:220px;height:100vh;background:#161b22;border-right:1px solid #30363d;overflow-y:auto;z-index:1000;padding:16px 0;transition:transform .3s}
 #sidebar h2{font-size:15px;padding:8px 16px;color:#58a6ff;border-bottom:1px solid #30363d;margin-bottom:8px}
 #sidebar a{display:block;padding:5px 16px;font-size:12px;color:#8b949e;text-decoration:none;transition:.2s;border-left:3px solid transparent}
@@ -18,65 +16,43 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 #sidebar .day-link{font-weight:600;color:#c9d1d9}
 #sidebar .day-link:hover{color:#58a6ff}
 #sidebar::-webkit-scrollbar{width:4px}
-
-/* ===== 菜单按钮 ===== */
 #menuBtn{display:none;position:fixed;top:12px;left:12px;z-index:1100;width:40px;height:40px;border-radius:8px;background:#1a73e8;color:#fff;border:none;font-size:20px;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.4)}
 #overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);z-index:999}
-
-/* ===== 主内容 ===== */
 #main{margin-left:220px;min-height:100vh}
 .page{min-height:auto;padding:24px 24px 32px;position:relative;background-size:cover;background-position:center;background-attachment:fixed;background-blend-mode:overlay;background-color:rgba(13,17,23,.75)}
 .page::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(13,17,23,.65);z-index:0}
 .page>*{position:relative;z-index:1}
-.page:nth-child(even){background-color:rgba(13,17,23,.8)}
-
-/* ===== 卡片 ===== */
 .card{background:rgba(22,27,34,.92);border-radius:12px;padding:20px;margin-bottom:12px;border:1px solid #30363d;backdrop-filter:blur(6px)}
-.card h3{font-size:16px;color:#58a6ff;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.card h3{font-size:16px;color:#58a6ff;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .card .meta{font-size:12px;color:#8b949e;margin-bottom:8px;display:flex;flex-wrap:wrap;gap:8px}
 .card .meta span{background:#1c2333;padding:2px 10px;border-radius:12px;border:1px solid #30363d}
-
-/* ===== 时间线 ===== */
 .timeline{font-size:13px;line-height:2}
 .timeline .row{display:flex;gap:8px;padding:2px 0;border-left:2px solid #30363d;padding-left:12px;margin-left:4px}
 .timeline .time{color:#8b949e;white-space:nowrap;min-width:72px;font-weight:600;font-size:12px}
-
-/* ===== 链接 ===== */
 a{color:#58a6ff;text-decoration:none;border-bottom:1px dashed #30363d;transition:.2s}
 a:hover{color:#79c0ff;border-bottom-color:#58a6ff}
 .hotel-link,.spot-link{font-weight:500}
 .hotel-link::after{content:' 🏨';font-size:11px}
 .spot-link::after{content:' 📍';font-size:11px}
-
-/* ===== 标签 ===== */
 .tag{display:inline-block;padding:1px 10px;border-radius:10px;font-size:11px;font-weight:600}
 .green{background:#1b3d1f;color:#7ee787}
 .yellow{background:#3d2e1b;color:#d29922}
 .red{background:#3d1b1b;color:#ff7b72}
 .blue{background:#1b2d3d;color:#79c0ff}
-
-/* ===== 表格 ===== */
+.purple{background:#2d1b3d;color:#d2a8ff}
 table{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0}
 th,td{padding:6px 10px;text-align:left;border-bottom:1px solid #30363d}
 th{background:#1c2333;color:#8b949e;font-weight:600}
-
-/* ===== 提示框 ===== */
 .note{background:rgba(210,153,34,.08);border-left:3px solid #d29922;border-radius:6px;padding:10px 12px;margin-top:8px;font-size:12px;color:#d29922}
 .note strong{color:#e3b341}
 .alert{background:rgba(255,123,114,.08);border-left:3px solid #ff7b72;border-radius:6px;padding:10px 12px;margin-top:8px;font-size:12px;color:#ff7b72}
 .alert strong{color:#ffa198}
-
-/* ===== 标题 ===== */
 .section-title{font-size:20px;color:#f0f6fc;padding:10px 0 16px;display:flex;align-items:center;gap:10px;border-bottom:2px solid #30363d;margin-bottom:16px}
 .section-title .num{background:#1a73e8;color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex-shrink:0}
-
-/* ===== 顶部 ===== */
 .header-card{background:linear-gradient(135deg,#0d47a1,#1a73e8);border-radius:16px;padding:32px 24px;margin-bottom:16px;text-align:center;border:none}
 .header-card h1{font-size:24px;color:#fff;margin-bottom:4px}
 .header-card .sub{font-size:13px;color:rgba(255,255,255,.8)}
 .header-card .badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 16px;border-radius:20px;font-size:13px;color:#fff;margin-top:8px}
-
-/* ===== 响应式 ===== */
 @media(max-width:768px){
 #sidebar{transform:translateX(-100%);width:260px}
 #sidebar.open{transform:translateX(0)}
@@ -92,72 +68,73 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 #sidebar{transform:translateX(0)!important}
 #overlay{display:none!important}
 }
+.price{color:#7ee787;font-weight:600}
+.price-note{font-size:11px;color:#8b949e;margin-top:2px}
+.booking-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:4px;margin-left:4px}
+.booking-douyin{background:#3d2e1b;color:#d29922}
+.booking-xiecheng{background:#1b2d3d;color:#79c0ff}
 </style>
 </head>
 <body>
-
 <button id="menuBtn" onclick="toggleMenu()">☰</button>
 <div id="overlay" onclick="toggleMenu()"></div>
-
 <nav id="sidebar">
-    <h2>📑 攻略目录</h2>
-    <a href="#sec0" class="day-link" onclick="closeMenu()">📌 概览</a>
-    <a href="#sec1" class="day-link" onclick="closeMenu()">👥 人员·住房·用车</a>
-    <a href="#sec2" class="day-link" onclick="closeMenu()">💰 费用预算</a>
-    <a href="#d0" class="day-link" onclick="closeMenu()">D0 7/3 🛬抵达</a>
-    <a href="#d1" class="day-link" onclick="closeMenu()">D1 7/4 🚗取车→富蕴</a>
-    <a href="#d2" class="day-link" onclick="closeMenu()">D2 7/5 富蕴→阿勒泰</a>
-    <a href="#d3" class="day-link" onclick="closeMenu()">D3 7/6 🛣️阿禾公路</a>
-    <a href="#d4" class="day-link" onclick="closeMenu()">D4 7/7 🏔️喀纳斯</a>
-    <a href="#d5" class="day-link" onclick="closeMenu()">D5 7/8 🌋安集海</a>
-    <a href="#d6" class="day-link" onclick="closeMenu()">D6 7/9 💧赛里木湖</a>
-    <a href="#d7" class="day-link" onclick="closeMenu()">D7 7/10 🏠伊宁休整</a>
-    <a href="#d8" class="day-link" onclick="closeMenu()">D8 7/11 🛣️伊昭公路</a>
-    <a href="#d9" class="day-link" onclick="closeMenu()">D9 7/12 🏔️夏塔古道</a>
-    <a href="#d10" class="day-link" onclick="closeMenu()">D10 7/13 🌲库尔德宁</a>
-    <a href="#d11" class="day-link" onclick="closeMenu()">D11 7/14 🏔️独库南段</a>
-    <a href="#d12" class="day-link" onclick="closeMenu()">D12 7/15 🛣️天山隧道</a>
-    <a href="#d13" class="day-link" onclick="closeMenu()">D13 7/16 🛍️休整还车</a>
-    <a href="#d14" class="day-link" onclick="closeMenu()">D14 7/17 🚂返程</a>
-    <a href="#map-section" class="day-link" onclick="closeMenu()">🗺️ 路线总览</a>
-    <a href="#hotels" class="day-link" onclick="closeMenu()">📌 酒店导航汇总</a>
+<h2>📑 攻略目录</h2>
+<a href="#sec0" class="day-link" onclick="closeMenu()">📌 概览</a>
+<a href="#sec1" class="day-link" onclick="closeMenu()">👥 人员·住房·用车</a>
+<a href="#sec2" class="day-link" onclick="closeMenu()">💰 费用预算</a>
+<a href="#d0" class="day-link" onclick="closeMenu()">D0 7/3 🛬抵达</a>
+<a href="#d1" class="day-link" onclick="closeMenu()">D1 7/4 🚗取车→富蕴</a>
+<a href="#d2" class="day-link" onclick="closeMenu()">D2 7/5 富蕴→阿勒泰</a>
+<a href="#d3" class="day-link" onclick="closeMenu()">D3 7/6 🛣️阿禾公路</a>
+<a href="#d4" class="day-link" onclick="closeMenu()">D4 7/7 🏔️喀纳斯</a>
+<a href="#d5" class="day-link" onclick="closeMenu()">D5 7/8 🌋安集海</a>
+<a href="#d6" class="day-link" onclick="closeMenu()">D6 7/9 💧赛里木湖</a>
+<a href="#d7" class="day-link" onclick="closeMenu()">D7 7/10 🏠伊宁休整</a>
+<a href="#d8" class="day-link" onclick="closeMenu()">D8 7/11 🛣️伊昭公路</a>
+<a href="#d9" class="day-link" onclick="closeMenu()">D9 7/12 🏔️夏塔古道</a>
+<a href="#d10" class="day-link" onclick="closeMenu()">D10 7/13 🌲库尔德宁</a>
+<a href="#d11" class="day-link" onclick="closeMenu()">D11 7/14 🏔️独库南段</a>
+<a href="#d12" class="day-link" onclick="closeMenu()">D12 7/15 🛣️天山隧道</a>
+<a href="#d13" class="day-link" onclick="closeMenu()">D13 7/16 🛍️休整还车</a>
+<a href="#d14" class="day-link" onclick="closeMenu()">D14 7/17 🚂返程</a>
+<a href="#map-section" class="day-link" onclick="closeMenu()">🗺️ 路线总览</a>
+<a href="#hotels" class="day-link" onclick="closeMenu()">📌 酒店导航汇总</a>
 </nav>
-
 <div id="main">
 
 <!-- ====== 顶部 ====== -->
 <div class="page" id="sec0" style="background-image:url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80)">
 <div class="header-card">
-    <h1>🚗 2026新疆家庭自驾游</h1>
-    <div class="sub">北疆大环线 · 三车18人 · 14天深度游</div>
-    <div class="badge">📅 7月3日（夜航）— 7月17日（返程）</div>
-    <div style="margin-top:12px;color:rgba(255,255,255,.7);font-size:13px">
-        🏔️ 阿禾公路 · 喀纳斯 · 赛里木湖 · 伊昭公路 · 夏塔 · 独库南段 · 天山隧道
-    </div>
+<h1>🚗 2026新疆家庭自驾游</h1>
+<div class="sub">北疆大环线 · 三车18人（13+5）· 15天深度游</div>
+<div class="badge">📅 7月3日（夜航）— 7月17日（火车返程）</div>
+<div style="margin-top:12px;color:rgba(255,255,255,.7);font-size:13px">🏔️ 阿禾公路·喀纳斯·赛里木湖·伊昭公路·夏塔·独库南段·天山隧道</div>
 </div>
 </div>
 
 <!-- ====== 人员 ====== -->
 <div class="page" id="sec1" style="background-image:url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">👥</span> 人员 · 住房 · 用车</div>
+<div class="section-title"><span class="num">👥</span> 人员·住房·用车</div>
 <div class="card">
 <h3>🚐 三车分配</h3>
 <table>
-<tr><th>车号</th><th>车型</th><th>主司机</th><th>备班司机</th><th>人数</th></tr>
+<tr><th>车号</th><th>车型</th><th>主司机</th><th>备班司机</th><th>载客</th></tr>
 <tr><td>🚐车1</td><td>传祺M8</td><td><b>吴尧</b></td><td>梁前国</td><td>7人</td></tr>
 <tr><td>🚐车2</td><td>传祺M8</td><td><b>洪锐</b></td><td>蔡绍华</td><td>6人</td></tr>
 <tr><td>🚗车3</td><td>自驾车</td><td><b>吕杰</b></td><td>薛昉(领队)</td><td>5人</td></tr>
 </table>
+<div style="font-size:12px;color:#8b949e;margin-top:4px">🚐 车1+车2为租车（7/4 12:00取车—7/16 12:00还车）共13人乘坐 · 🚗 车3为吕杰组自驾</div>
 </div>
 <div class="card">
-<h3>🏠 五间房 · 四个家庭</h3>
+<h3>🏠 五间房·四个家庭</h3>
 <table>
 <tr><th>房号</th><th>入住人员</th><th>家庭</th><th>人数</th></tr>
-<tr><td>🏠房1</td><td>吴尧 + 吴冕之(儿) + 吴永鹏(老)</td><td><b>家庭A</b></td><td>3</td></tr>
-<tr><td>🏠房2</td><td>洪锐 + 洪煜翔(儿) + 洪宇欣(儿) + 蔡绍华</td><td><b>家庭B</b></td><td>4</td></tr>
-<tr><td>🏠房3</td><td>洪健(老·A家) + 赵立琴(老·B家) + 洪先华(老·D家)</td><td>A·B·D分摊</td><td>3</td></tr>
-<tr><td>🏠房4</td><td>洪志(班主任) + 梁芯诺(儿) + 梁芯诚(儿) + 梁前国</td><td><b>家庭C</b></td><td>4</td></tr>
-<tr><td>🏠房5</td><td>吕杰 + 薛昉(领队) + 吕佳乐(儿) + 吕奕康(儿)</td><td><b>家庭D</b></td><td>4</td></tr>
+<tr><td>🏠房1</td><td>吴尧+吴冕之(儿)+吴永鹏(老)</td><td><b>家庭A</b></td><td>3</td></tr>
+<tr><td>🏠房2</td><td>洪锐+洪煜翔(儿)+洪宇欣(儿)+蔡绍华</td><td><b>家庭B</b></td><td>4</td></tr>
+<tr><td>🏠房3</td><td>洪健(老·A家)+赵立琴(老·B家)+洪先华(老·D家)</td><td>A·B·D分摊</td><td>3</td></tr>
+<tr><td>🏠房4</td><td>洪志(班主任)+梁芯诺(儿)+梁芯诚(儿)+梁前国</td><td><b>家庭C</b></td><td>4</td></tr>
+<tr><td>🏠房5</td><td>吕杰+薛昉(领队)+吕佳乐(儿)+吕奕康(儿)</td><td><b>家庭D</b></td><td>4</td></tr>
 </table>
 </div>
 </div>
@@ -166,109 +143,118 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 <div class="page" id="sec2" style="background-image:url(https://images.unsplash.com/photo-1470071459604-4b118ecb8b87?auto=format&fit=crop&w=1920&q=80)">
 <div class="section-title"><span class="num">💰</span> 费用预算</div>
 <div class="card">
-<h3>✈️🚂 大交通（12人组）</h3>
+<h3>✈️🚂 大交通 · 13人组（武汉飞）</h3>
 <table>
-<tr><td>武汉→乌鲁木齐机票（夜航）</td><td>1,500元×12人</td><td style="text-align:right;font-weight:600">18,000元</td></tr>
-<tr><td>乌鲁木齐→武汉硬卧</td><td>650元×12人</td><td style="text-align:right;font-weight:600">7,800元</td></tr>
-<tr style="background:#1c2333"><td><b>小计</b></td><td></td><td style="text-align:right;font-weight:700;color:#7ee787"><b>25,800元</b></td></tr>
+<tr><td>武汉→乌鲁木齐机票（夜航）</td><td>1,500元×13人</td><td style="text-align:right;font-weight:600">19,500元</td></tr>
+<tr><td>乌鲁木齐→武汉硬卧</td><td>650元×13人</td><td style="text-align:right;font-weight:600">8,450元</td></tr>
+<tr style="background:#1c2333"><td><b>小计</b></td><td></td><td style="text-align:right;font-weight:700;color:#7ee787">27,950元</td></tr>
 </table>
-<div style="font-size:12px;color:#8b949e">人均：25,800÷12 = <b>2,150元/人</b></div>
+<div style="font-size:12px;color:#8b949e">人均：27,950÷13 = <b class="price">2,150元/人</b></div>
 </div>
 <div class="card">
-<h3>🚐 租车+油费过路费（12人组）</h3>
+<h3>🚐 租车+油费过路费 · 13人组</h3>
 <table>
 <tr><td>传祺M8×2辆（12天）</td><td>6,559元×2</td><td style="text-align:right;font-weight:600">13,118元</td></tr>
-<tr><td>油费（约3,850km）</td><td>0.7元/km×2辆</td><td style="text-align:right;font-weight:600">约5,400元</td></tr>
+<tr><td>油费（约3,850km）</td><td>0.7元/km×2辆</td><td style="text-align:right;font-weight:600">约5,390元</td></tr>
 <tr><td>过路费</td><td>约2,000km×0.5元×2辆</td><td style="text-align:right;font-weight:600">约2,000元</td></tr>
-<tr style="background:#1c2333"><td><b>小计</b></td><td></td><td style="text-align:right;font-weight:700;color:#7ee787"><b>20,518元</b></td></tr>
+<tr style="background:#1c2333"><td><b>小计</b></td><td></td><td style="text-align:right;font-weight:700;color:#7ee787">20,508元</td></tr>
 </table>
-<div style="font-size:12px;color:#8b949e">人均：20,518÷12 = <b>1,710元/人</b></div>
+<div style="font-size:12px;color:#8b949e">人均：20,508÷13 = <b class="price">1,578元/人</b></div>
 </div>
 <div class="card">
-<h3>🏨 住宿费（14晚×5间=19,805元 · 4个家庭按房间分摊）</h3>
+<h3>🏨 住宿费·14晚×5间（按4个家庭分摊）</h3>
 <table>
 <tr><th>家庭</th><th>住房</th><th>金额</th></tr>
-<tr><td><b>家庭A</b>（吴尧家）</td><td>房1全价 + 房3的⅓</td><td style="text-align:right;font-weight:600">5,281元</td></tr>
-<tr><td><b>家庭B</b>（洪锐家）</td><td>房2全价 + 房3的⅓</td><td style="text-align:right;font-weight:600">5,281元</td></tr>
-<tr><td><b>家庭C</b>（梁前国家）</td><td>房4全价</td><td style="text-align:right;font-weight:600">3,961元</td></tr>
-<tr><td><b>家庭D</b>（吕杰家）</td><td>房5全价 + 房3的⅓</td><td style="text-align:right;font-weight:600">5,281元</td></tr>
+<tr><td><b>家庭A</b>（吴尧家·房1+房3⅓）</td><td>3人</td><td style="text-align:right;font-weight:600">5,281元</td></tr>
+<tr><td><b>家庭B</b>（洪锐家·房2+房3⅓）</td><td>4人</td><td style="text-align:right;font-weight:600">5,281元</td></tr>
+<tr><td><b>家庭C</b>（梁前国家·房4）</td><td>4人</td><td style="text-align:right;font-weight:600">3,961元</td></tr>
+<tr><td><b>家庭D</b>（吕杰家·房5+房3⅓）</td><td>4人</td><td style="text-align:right;font-weight:600">5,281元</td></tr>
+<tr style="background:#1c2333"><td><b>合计</b></td><td></td><td style="text-align:right;font-weight:700;color:#7ee787">19,805元</td></tr>
 </table>
 </div>
 <div class="card">
 <h3>🍽️🎫 餐费+门票（18人平摊）</h3>
 <table>
 <tr><td>餐费</td><td>14天×60元×18人</td><td style="text-align:right;font-weight:600">15,120元</td></tr>
-<tr><td>门票</td><td>仅5个收费景点</td><td style="text-align:right;font-weight:600">9,468元</td></tr>
-<tr style="background:#1c2333"><td><b>小计</b></td><td></td><td style="text-align:right;font-weight:700;color:#7ee787"><b>24,588元</b></td></tr>
+<tr><td>门票</td><td>5个收费景点</td><td style="text-align:right;font-weight:600">9,468元</td></tr>
+<tr style="background:#1c2333"><td><b>小计</b></td><td></td><td style="text-align:right;font-weight:700;color:#7ee787">24,588元</td></tr>
 </table>
-<div style="font-size:12px;color:#8b949e">人均：餐费<b>840元/人</b> · 门票<b>526元/人</b></div>
+<div style="font-size:12px;color:#8b949e">餐费人均<b>840元/人</b> · 门票人均<b>526元/人</b>（18人）</div>
 </div>
 <div class="card">
-<h3>💵 人均总费用</h3>
+<h3>💵 人均总费用（13人组参考）</h3>
 <table>
-<tr><th>组别</th><th>构成</th><th>人均</th></tr>
-<tr><td><b>🏠12人组</b></td><td>大交通2,150+租车油费1,710+住宿(按家庭)+餐费840+门票526</td><td style="text-align:right;font-weight:700;color:#7ee787">≈6,546元/人</td></tr>
-<tr><td><b>🚗自驾组</b></td><td>住宿(按家庭)+餐费840+门票526+自驾自理</td><td style="text-align:right;font-weight:600">≈1,366+自驾</td></tr>
+<tr><td>大交通</td><td style="text-align:right" class="price">2,150元</td></tr>
+<tr><td>租车+油费过路费</td><td style="text-align:right" class="price">1,578元</td></tr>
+<tr><td>住宿（按家庭，以A家4人计）</td><td style="text-align:right" class="price">约1,320元</td></tr>
+<tr><td>餐费</td><td style="text-align:right" class="price">840元</td></tr>
+<tr><td>门票</td><td style="text-align:right" class="price">526元</td></tr>
+<tr style="background:#1c2333"><td><b>≈ 合计</b></td><td style="text-align:right;font-weight:700;color:#7ee787"><b>约6,414元/人</b></td></tr>
 </table>
+<div style="font-size:12px;color:#8b949e">🚗 自驾组（吕杰组）: 住宿(按家庭)+餐费840+门票526+自驾费用自理</div>
 </div>
 <div class="card">
 <h3>🎫 门票明细（18人共9,468元）</h3>
 <table>
 <tr><th>景点</th><th>单价</th><th>金额</th></tr>
-<tr><td>可可苏里湖 · 伊雷木湖</td><td>免费</td><td style="text-align:right">0</td></tr>
+<tr><td>可可苏里湖·伊雷木湖</td><td>免费</td><td style="text-align:right">0</td></tr>
 <tr><td>禾木村（门口打卡）</td><td>免费</td><td style="text-align:right">0</td></tr>
-<tr><td><b>🏔️ 喀纳斯湖</b></td><td>230元</td><td style="text-align:right;font-weight:600">4,140元</td></tr>
-<tr><td>安集海大峡谷 · 魔鬼城(路过)</td><td>免费</td><td style="text-align:right">0</td></tr>
-<tr><td><b>💧 赛里木湖自驾</b></td><td>145元</td><td style="text-align:right;font-weight:600">2,610元</td></tr>
-<tr><td>昭苏油菜花 · 格登碑 · 玉湖</td><td>免费</td><td style="text-align:right">0</td></tr>
-<tr><td><b>🏔️ 夏塔古道</b></td><td>80元</td><td style="text-align:right;font-weight:600">1,440元</td></tr>
-<tr><td>云端草原（喀拉盖+赛克）</td><td>免费</td><td style="text-align:right">0</td></tr>
-<tr><td><b>🌲 库尔德宁</b></td><td>30元</td><td style="text-align:right;font-weight:600">540元</td></tr>
-<tr><td>唐布拉百里画廊 · 乔尔玛陵园</td><td>免费</td><td style="text-align:right">0</td></tr>
+<tr><td><b>🏔️ 喀纳斯湖</b><br><span style="font-size:11px;color:#8b949e">提前公众号购票</span></td><td>230元</td><td style="text-align:right;font-weight:600">4,140元</td></tr>
+<tr><td>安集海大峡谷</td><td>免费</td><td style="text-align:right">0</td></tr>
+<tr><td><b>💧 赛里木湖自驾环湖</b><br><span style="font-size:11px;color:#8b949e">提前公众号买自驾票</span></td><td>145元</td><td style="text-align:right;font-weight:600">2,610元</td></tr>
+<tr><td>昭苏油菜花·格登碑·玉湖</td><td>免费</td><td style="text-align:right">0</td></tr>
+<tr><td><b>🏔️ 夏塔古道</b><br><span style="font-size:11px;color:#d29922">建议公众号抢自驾票（限量）</span></td><td>80元</td><td style="text-align:right;font-weight:600">1,440元</td></tr>
+<tr><td>喀拉盖+赛克云端草原</td><td>免费</td><td style="text-align:right">0</td></tr>
+<tr><td><b>🌲 库尔德宁</b><br><span style="font-size:11px;color:#8b949e">可线上购自驾票</span></td><td>30元</td><td style="text-align:right;font-weight:600">540元</td></tr>
+<tr><td>唐布拉百里画廊</td><td>免费</td><td style="text-align:right">0</td></tr>
+<tr><td>乔尔玛烈士陵园</td><td>免费</td><td style="text-align:right">0</td></tr>
 <tr><td><b>🏞️ 天山神秘大峡谷</b></td><td>41元</td><td style="text-align:right;font-weight:600">738元</td></tr>
 <tr><td>新疆博物馆</td><td>免费</td><td style="text-align:right">0</td></tr>
 </table>
 </div>
 </div>
 
-<!-- 每日行程 D0-D14 -->
+<!-- ====== D0 ====== -->
 <div class="page" id="d0" style="background-image:url(https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">0</span> D0 · 7月3日（周五）🛬 武汉→乌鲁木齐 <span class="tag green">抵达</span></div>
+<div class="section-title"><span class="num">0</span> D0·7月3日（周五）🛬武汉→乌鲁木齐 <span class="tag green">抵达</span></div>
 <div class="card">
-<div class="meta"><span>🏨 汉庭酒店(机场店)</span><span>🕐 凌晨1:20到</span></div>
+<div class="meta"><span>🏨 汉庭酒店(机场店) 华住会</span><span>🕐 凌晨1:20到</span></div>
 <div class="timeline">
-<div class="row"><span class="time">凌晨1:20</span><span>12人抵达乌鲁木齐地窝堡机场，打车前往酒店</span></div>
+<div class="row"><span class="time">凌晨1:20</span><span>13人抵达乌鲁木齐地窝堡机场，打车前往酒店</span></div>
 <div class="row"><span class="time"></span><span>🚗 另1车5人（吕杰组）已自驾到乌市汇合</span></div>
 <div class="row"><span class="time"></span><span>三车全员入住，适应2小时时差</span></div>
 </div>
-<div class="note"><strong>📌 注意：</strong>凌晨到直接入住休息。明早8:00出发取车。</div>
+<div class="note"><strong>📌 注意：</strong>凌晨到直接入住休息。明天12:00取车，上午自由活动可打车去周边逛逛。</div>
 <div style="margin-top:8px">🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐天山国际机场店)&city=乌鲁木齐&callnative=1" class="hotel-link">汉庭酒店(乌鲁木齐天山国际机场店)</a> × 5间</div>
+<div class="price-note">💰 259元/间/晚（华住会·抖音团券518元/2晚）</div>
 </div>
 </div>
 
+<!-- ====== D1 ====== -->
 <div class="page" id="d1" style="background-image:url(https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">1</span> D1 · 7月4日（周六）🚗取车→🌿可可苏里→富蕴 <span class="tag yellow">500km·中等</span></div>
+<div class="section-title"><span class="num">1</span> D1·7月4日（周六）🚗取车→🌿可可苏里→富蕴 <span class="tag yellow">500km·中等</span></div>
 <div class="card">
-<div class="meta"><span>🚐 三车取车</span><span>🌿 可可苏里湖</span><span>🏨 全季富蕴</span></div>
+<div class="meta"><span>🚐 12:00取车</span><span>🌿 可可苏里湖</span><span>🏨 全季富蕴 华住会</span></div>
 <div class="timeline">
-<div class="row"><span class="time">8:00-9:00</span><span>🚗 12人取车（2辆传祺M8），验车拍视频、加满油</span></div>
-<div class="row"><span class="time">9:00-10:00</span><span>🛒 三车汇合，超市采购（水、干粮、零食、防晒）</span></div>
-<div class="row"><span class="time">10:00-15:00</span><span>🚗 S11五大高速→富蕴（500km，服务区午餐）</span></div>
-<div class="row"><span class="time">15:00-17:00</span><span>🌿 <a href="https://uri.amap.com/search?keyword=可可苏里湖&city=富蕴&callnative=1" class="spot-link">可可苏里湖</a>（免费，7月野花盛开）</span></div>
-<div class="row"><span class="time">19:00-20:30</span><span>🍽️ 晚餐（烤狗鱼、额河鱼）</span></div>
+<div class="row"><span class="time">12:00-13:00</span><span>🚗 13人取车（2辆传祺M8），验车拍视频、加满油</span></div>
+<div class="row"><span class="time">13:00-14:00</span><span>🛒 三车汇合，超市采购（水、干粮、零食）</span></div>
+<div class="row"><span class="time">14:00-19:00</span><span>🚗 S11五大高速→富蕴（500km，服务区午餐）</span></div>
+<div class="row"><span class="time">19:00-20:00</span><span>🌿 <a href="https://uri.amap.com/search?keyword=可可苏里湖&city=富蕴&callnative=1" class="spot-link">可可苏里湖</a>（免费，7月野花湿地，傍晚光线好）</span></div>
+<div class="row"><span class="time">20:00</span><span>🏨 入住</span></div>
 </div>
-<div class="alert"><strong>⚠️ 注意：</strong>取车时拍摄车辆外观视频（四角+底盘）。新疆紫外线极强，SPF50+防晒必备！</div>
+<div class="alert"><strong>⚠️ 注意：</strong>取车时拍摄车辆外观视频（四角+底盘），新疆紫外线极强注意防晒。</div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=全季酒店(阿勒泰富蕴县迎宾东路店)&city=富蕴&callnative=1" class="hotel-link">全季酒店(阿勒泰富蕴县迎宾东路店)</a> × 5间</div>
+<div class="price-note">💰 259元/间/晚（华住会·抖音团券518元/2晚）</div>
 </div>
 </div>
 
+<!-- ====== D2 ====== -->
 <div class="page" id="d2" style="background-image:url(https://images.unsplash.com/photo-1440581572848-f3180e25fd7d?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">2</span> D2 · 7月5日（周日）富蕴周边→阿勒泰市 <span class="tag green">300km·轻松</span></div>
+<div class="section-title"><span class="num">2</span> D2·7月5日（周日）富蕴周边→阿勒泰市 <span class="tag green">300km·轻松</span></div>
 <div class="card">
-<div class="meta"><span>🏞️ 可可托海打卡</span><span>🌊 伊雷木湖</span><span>⛽ 加满油！</span><span>🏨 全季阿勒泰</span></div>
+<div class="meta"><span>🏞️ 可可托海打卡</span><span>🌊 伊雷木湖</span><span>⛽ 加满油</span><span>🏨 全季阿勒泰 华住会</span></div>
 <div class="timeline">
-<div class="row"><span class="time">9:00-10:00</span><span>🌿 补拍可可苏里湖晨景</span></div>
-<div class="row"><span class="time">10:00-11:00</span><span>📸 <a href="https://uri.amap.com/search?keyword=可可托海景区&city=富蕴&callnative=1" class="spot-link">可可托海景区</a>门口打卡（不进景区）</span></div>
+<div class="row"><span class="time">9:00-11:00</span><span>🌿补拍可可苏里→📸<a href="https://uri.amap.com/search?keyword=可可托海景区&city=富蕴&callnative=1" class="spot-link">可可托海</a>门口打卡</span></div>
 <div class="row"><span class="time">11:00-12:00</span><span>🌊 <a href="https://uri.amap.com/search?keyword=伊雷木湖&city=富蕴&callnative=1" class="spot-link">伊雷木湖观景台</a>（免费，湖水碧蓝）</span></div>
 <div class="row"><span class="time">12:00-13:00</span><span>🍽️ 午餐</span></div>
 <div class="row"><span class="time">13:00-17:00</span><span>🚗 富蕴→阿勒泰市（280km）</span></div>
@@ -276,59 +262,66 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 </div>
 <div class="alert"><strong>🚨 今晚三车必须加满油！阿禾公路全程无加油站！</strong> 提前下载高德离线地图。</div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=全季酒店(阿勒泰红墩路店)&city=阿勒泰&callnative=1" class="hotel-link">全季酒店(阿勒泰红墩路店)</a> × 5间</div>
+<div class="price-note">💰 319元/间/晚（华住会·抖音团券638元/2晚）</div>
 </div>
 </div>
 
+<!-- ====== D3 ====== -->
 <div class="page" id="d3" style="background-image:url(https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">3</span> D3 · 7月6日（周一）🛣️阿禾公路→禾木打卡→贾登峪 <span class="tag yellow">310km·中等</span></div>
+<div class="section-title"><span class="num">3</span> D3·7月6日（周一）🛣️阿禾公路→禾木打卡→贾登峪 <span class="tag yellow">310km·中等</span></div>
 <div class="card">
-<div class="meta"><span>🛣️ 阿禾公路</span><span>🏞️ 禾木打卡</span><span>🏨 贾登峪</span></div>
+<div class="meta"><span>🛣️ 阿禾公路（全时段通行）</span><span>🏞️ 禾木打卡</span><span>🏨 喀纳斯一朵莲民宿 携程</span></div>
 <div class="timeline">
 <div class="row"><span class="time">8:00</span><span>🚗 三车出发（油箱满！）</span></div>
-<div class="row"><span class="time">8:00-12:00</span><span>🛣️ <a href="https://uri.amap.com/search?keyword=阿禾公路&city=阿勒泰&callnative=1" class="spot-link">阿禾公路</a>（209km，2025年新开景观大道）</span></div>
-<div class="row"><span class="time"></span><span>沿途：小东沟→乌希里克湿地→野卡峡→通巴黑森林</span></div>
-<div class="row"><span class="time">12:00-14:00</span><span>🏞️ <a href="https://uri.amap.com/search?keyword=禾木村&city=布尔津&callnative=1" class="spot-link">禾木村</a>入口打卡（不进景区）</span></div>
-<div class="row"><span class="time">14:00-14:30</span><span>🥪 自带午餐（禾木河边野餐）</span></div>
+<div class="row"><span class="time">8:00-12:00</span><span>🛣️ <a href="https://uri.amap.com/search?keyword=阿禾公路&city=阿勒泰&callnative=1" class="spot-link">阿禾公路</a>（209km，夏季全时段通行，12米以下客车✅）</span></div>
+<div class="row"><span class="time"></span><span>⛰️ 小东沟→乌希里克湿地→野卡峡→通巴黑森林</span></div>
+<div class="row"><span class="time">12:00-14:00</span><span>🏞️ <a href="https://uri.amap.com/search?keyword=禾木村&city=布尔津&callnative=1" class="spot-link">禾木村</a>入口打卡（不进景区）🥪自带午餐</span></div>
 <div class="row"><span class="time">14:30-16:30</span><span>🚗 禾木→贾登峪（100km）</span></div>
 </div>
-<div class="note"><strong>📌 注意：</strong>阿禾公路通行9:30-15:00，7座及以下✅。禾木不进景区省102元/人。</div>
-<div>🏨 <a href="https://uri.amap.com/search?keyword=贾登峪悦已禾院民宿&city=布尔津&callnative=1" class="hotel-link">贾登峪悦已禾院民宿</a> × 5间</div>
+<div class="note"><strong>📌 阿禾公路：夏季全时段通行，7座及以下✅ 喀纳斯景区开放8:00-20:00。</strong> 禾木不进景区省102元/人。</div>
+<div>🏨 <a href="https://uri.amap.com/search?keyword=喀纳斯一朵莲民宿&city=布尔津&callnative=1" class="hotel-link">喀纳斯一朵莲民宿</a> × 5间</div>
+<div class="price-note">💰 约450元/间/晚（携程预订·贾登峪民宿区）</div>
 </div>
 </div>
 
+<!-- ====== D4 ====== -->
 <div class="page" id="d4" style="background-image:url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">4</span> D4 · 7月7日（周二）🏔️喀纳斯湖→布尔津 <span class="tag yellow">180km·中等</span></div>
+<div class="section-title"><span class="num">4</span> D4·7月7日（周二）🏔️喀纳斯湖→布尔津 <span class="tag yellow">180km·中等</span></div>
 <div class="card">
-<div class="meta"><span>🏔️ 喀纳斯湖</span><span>🍽️ 布尔津夜市</span><span>🏨 布尔津</span></div>
+<div class="meta"><span>🏔️ 喀纳斯湖(提前公众号购票)</span><span>🍽️ 布尔津夜市</span><span>🏨 布尔津 携程</span></div>
 <div class="timeline">
 <div class="row"><span class="time">8:00-14:00</span><span>🏔️ <a href="https://uri.amap.com/search?keyword=喀纳斯景区&city=布尔津&callnative=1" class="spot-link">喀纳斯湖</a>（230元/人，三湾+湖边栈道）🥪自带午餐</span></div>
 <div class="row"><span class="time">14:00-17:00</span><span>🚗 喀纳斯→布尔津（150km）</span></div>
 <div class="row"><span class="time">19:00-21:00</span><span>🍽️ <a href="https://uri.amap.com/search?keyword=布尔津河堤夜市&city=布尔津&callnative=1" class="spot-link">布尔津河堤夜市</a>（烤狗鱼+格瓦斯）</span></div>
 </div>
-<div class="note"><strong>📌 注意：</strong>观鱼台1,068级台阶较累，老人孩子建议只走三湾（平路徒步）。提前公众号预约门票。</div>
+<div class="note"><strong>📌 注意：</strong>观鱼台1,068级台阶较累，老人孩子建议只走三湾（平路）。喀纳斯需提前公众号预约购票。</div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=布尔津岸芷汀兰假日酒店&city=布尔津&callnative=1" class="hotel-link">布尔津岸芷汀兰假日酒店</a> × 5间</div>
+<div class="price-note">💰 约250元/间/晚（携程预订）</div>
 </div>
 </div>
 
+<!-- ====== D5 ====== -->
 <div class="page" id="d5" style="background-image:url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">5</span> D5 · 7月8日（周三）布尔津→🌋安集海大峡谷→乌苏 <span class="tag red">550km·🔴最累</span></div>
+<div class="section-title"><span class="num">5</span> D5·7月8日（周三）布尔津→🌋安集海大峡谷→乌苏 <span class="tag red">550km·🔴最累</span></div>
 <div class="card">
-<div class="meta"><span>🌋 安集海大峡谷</span><span>🏨 乌苏</span></div>
+<div class="meta"><span>🌋 安集海大峡谷（免费）</span><span>🏨 海友乌苏 华住会</span></div>
 <div class="timeline">
 <div class="row"><span class="time">8:00-12:00</span><span>🚗 布尔津→独山子方向（G3014，450km）🥪车上干粮</span></div>
-<div class="row"><span class="time">12:00-12:30</span><span>🏜️ <a href="https://uri.amap.com/search?keyword=世界魔鬼城&city=克拉玛依&callnative=1" class="spot-link">世界魔鬼城</a>门口拍照</span></div>
-<div class="row"><span class="time">14:30-16:00</span><span>🌋 <a href="https://uri.amap.com/search?keyword=安集海大峡谷&city=乌苏&callnative=1" class="spot-link">安集海大峡谷</a>（<b>免费！</b>比独山子壮观）</span></div>
+<div class="row"><span class="time">12:00-12:30</span><span>🏜️ <a href="https://uri.amap.com/search?keyword=世界魔鬼城&city=克拉玛依&callnative=1" class="spot-link">世界魔鬼城</a>门口拍照（不进景区）</span></div>
+<div class="row"><span class="time">14:30-16:00</span><span>🌋 <a href="https://uri.amap.com/search?keyword=安集海大峡谷&city=乌苏&callnative=1" class="spot-link">安集海大峡谷</a>（<b>免费！</b>比独山子更壮观）</span></div>
 <div class="row"><span class="time">16:00-17:00</span><span>🚗 安集海→乌苏（60km）</span></div>
 </div>
 <div class="alert"><strong>⚠️ 三车司机轮换驾驶！</strong>安集海无护栏注意安全。</div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=海友酒店(乌苏九莲泉公园店)&city=乌苏&callnative=1" class="hotel-link">海友乌苏市九莲泉公园酒店</a> × 5间</div>
+<div class="price-note">💰 179元/间/晚（华住会·抖音团券358元/2晚）</div>
 </div>
 </div>
 
+<!-- ====== D6 ====== -->
 <div class="page" id="d6" style="background-image:url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">6</span> D6 · 7月9日（周四）💧赛里木湖环湖→果子沟→伊宁 <span class="tag yellow">430km·中等</span></div>
+<div class="section-title"><span class="num">6</span> D6·7月9日（周四）💧赛里木湖环湖→果子沟→伊宁 <span class="tag yellow">430km·中等</span></div>
 <div class="card">
-<div class="meta"><span>💧 赛里木湖环湖</span><span>🛣️ 果子沟大桥</span><span>🏨 伊宁（连住2晚）</span></div>
+<div class="meta"><span>💧 赛湖自驾环湖（提前买自驾票）</span><span>🎭 六星街</span><span>🏨 汉庭伊宁喀赞其 华住会·连住2晚</span></div>
 <div class="timeline">
 <div class="row"><span class="time">8:00-11:00</span><span>🚗 乌苏→赛里木湖（G30，280km）</span></div>
 <div class="row"><span class="time">11:00-11:15</span><span>🛣️ <a href="https://uri.amap.com/search?keyword=果子沟大桥观景台&city=伊犁&callnative=1" class="spot-link">果子沟大桥观景台</a>（免费，先拍全景）</span></div>
@@ -337,30 +330,33 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 <div class="row"><span class="time">19:00-21:00</span><span>🎭 <a href="https://uri.amap.com/search?keyword=六星街&city=伊宁&callnative=1" class="spot-link">六星街</a>漫步+古兰丹姆冰淇淋</span></div>
 <div class="row"><span class="time">21:30</span><span>🌅 <a href="https://uri.amap.com/search?keyword=伊犁河大桥&city=伊宁&callnative=1" class="spot-link">伊犁河大桥</a>观日落（约22:00日落）</span></div>
 </div>
-<div class="note"><strong>📌 注意：南门进顺时针→南门出，直接上G30去伊宁。</strong> 湖边15-20℃，带外套。</div>
+<div class="note"><strong>📌 赛湖自驾票145元/人，提前在"赛里木湖"公众号购买。</strong> 南门进顺时针→南门出。</div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(伊宁喀赞其景区店)&city=伊宁&callnative=1" class="hotel-link">汉庭酒店(伊宁喀赞其景区店)</a> × 5间 · 连住2晚</div>
+<div class="price-note">💰 309元/间/晚（华住会·抖音团券618元/2晚）</div>
 </div>
 </div>
 
+<!-- ====== D7 ====== -->
 <div class="page" id="d7" style="background-image:url(https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">7</span> D7 · 7月10日（周五）🏠 伊宁休整日 <span class="tag green">0km·纯休息</span></div>
+<div class="section-title"><span class="num">7</span> D7·7月10日（周五）🏠伊宁休整日 <span class="tag green">0km·纯休息</span></div>
 <div class="card">
-<div class="meta"><span>🛍️ 汉人街大巴扎</span><span>💙 喀赞其民俗区</span><span>🔧 检查车辆</span></div>
+<div class="meta"><span>🛍️ 可打车游玩</span><span>💙 喀赞其·六星街</span><span>🔧 检查车辆</span></div>
 <div class="timeline">
 <div class="row"><span class="time">9:00-11:00</span><span>🛍️ <a href="https://uri.amap.com/search?keyword=汉人街大巴扎&city=伊宁&callnative=1" class="spot-link">汉人街大巴扎</a>（买干果特产）</span></div>
-<div class="row"><span class="time">11:00-12:00</span><span>💙 <a href="https://uri.amap.com/search?keyword=喀赞其民俗旅游区&city=伊宁&callnative=1" class="spot-link">喀赞其民俗旅游区</a>（蓝色小镇，免费）</span></div>
+<div class="row"><span class="time">11:00-12:00</span><span>💙 <a href="https://uri.amap.com/search?keyword=喀赞其民俗旅游区&city=伊宁&callnative=1" class="spot-link">喀赞其民俗区</a>（蓝色小镇，免费）</span></div>
 <div class="row"><span class="time">12:00-15:00</span><span>🍽️ 午餐+<b style="color:#ff7b72">午休+检查三车</b>（轮胎、机油、冷却液）</span></div>
 <div class="row"><span class="time">15:00-17:00</span><span>🏘️ 六星街深度游（免费）</span></div>
 </div>
-<div class="alert"><strong>🔧 检查车辆！</strong>明天走伊昭公路山路，务必确保车况良好。</div>
-<div>🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(伊宁喀赞其景区店)&city=伊宁&callnative=1" class="hotel-link">汉庭酒店(伊宁喀赞其景区店)</a> × 5间 · 连住第2晚</div>
+<div class="note"><strong>📌 今日不动车，打车备选景点：</strong><a href="https://uri.amap.com/search?keyword=林则徐纪念馆&city=伊宁&callnative=1" class="spot-link">林则徐纪念馆</a>（免费）、<a href="https://uri.amap.com/search?keyword=苹果公园&city=伊宁&callnative=1" class="spot-link">苹果公园</a>（免费）</div>
+<div>🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(伊宁喀赞其景区店)&city=伊宁&callnative=1" class="hotel-link">汉庭酒店(伊宁喀赞其景区店)</a> × 5间·连住第2晚</div>
 </div>
 </div>
 
+<!-- ====== D8 ====== -->
 <div class="page" id="d8" style="background-image:url(https://images.unsplash.com/photo-1440581572848-f3180e25fd7d?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">8</span> D8 · 7月11日（周六）🛣️伊昭公路→昭苏→75团 <span class="tag green">200km·轻松</span></div>
+<div class="section-title"><span class="num">8</span> D8·7月11日（周六）🛣️伊昭公路→昭苏→75团 <span class="tag green">200km·轻松</span></div>
 <div class="card">
-<div class="meta"><span>🛣️ 伊昭公路</span><span>🌸 昭苏油菜花</span><span>🏛️ 格登碑</span><span>🏞️ 昭苏玉湖</span><span>🏨 75团</span></div>
+<div class="meta"><span>🛣️ 伊昭公路（08:00-20:00通行）</span><span>🌸 昭苏油菜花</span><span>🏨 75团长亭古道 携程</span></div>
 <div class="timeline">
 <div class="row"><span class="time">8:30-12:00</span><span>🛣️ <a href="https://uri.amap.com/search?keyword=伊昭公路&city=昭苏&callnative=1" class="spot-link">伊昭公路S237</a>（翻乌孙山、白石峰）</span></div>
 <div class="row"><span class="time">12:00-13:00</span><span>🍽️ 午餐（昭苏马肉纳仁）</span></div>
@@ -369,92 +365,217 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 <div class="row"><span class="time">15:00-15:40</span><span>🏞️ <a href="https://uri.amap.com/search?keyword=昭苏玉湖&city=昭苏&callnative=1" class="spot-link">昭苏玉湖</a>（免费）</span></div>
 <div class="row"><span class="time">15:40-16:00</span><span>🚗 玉湖→75团（20km）</span></div>
 </div>
-<div class="note"><strong>📌 注意：</strong>伊昭公路9:00-21:00通行，7座及以下✅。弯道极多，晕车药提前吃。</div>
+<div class="note"><strong>📌 伊昭公路：08:00-20:00通行，7座及以下✅</strong> 弯道极多，晕车药提前吃。备选绕行：G577→特克斯。</div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=长亭古道·雪山观景酒店&city=昭苏&callnative=1" class="hotel-link">长亭古道·雪山观景酒店(75团)</a> × 5间</div>
+<div class="price-note">💰 约250元/间/晚（携程预订·距夏塔仅20km）</div>
 </div>
 </div>
 
+<!-- ====== D9 ====== -->
 <div class="page" id="d9" style="background-image:url(https://images.unsplash.com/photo-1470071459604-4b118ecb8b87?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">9</span> D9 · 7月12日（周日）🏔️夏塔古道→云端草原→特克斯→巩留 <span class="tag yellow">237km·中等</span></div>
+<div class="section-title"><span class="num">9</span> D9·7月12日（周日）🏔️夏塔古道→云端草原→特克斯→巩留 <span class="tag yellow">237km·中等</span></div>
 <div class="card">
-<div class="meta"><span>🏔️ 夏塔古道（上午）</span><span>🌿 云端草原</span><span>🌀 特克斯</span><span>🏨 巩留民宿</span></div>
+<div class="meta"><span>🏔️ 夏塔古道（提前抢自驾票）</span><span>🌿 云端草原</span><span>🏨 巩留民宿 携程</span></div>
 <div class="timeline">
-<div class="row"><span class="time">8:00-8:15</span><span>🚗 75团→<a href="https://uri.amap.com/search?keyword=夏塔旅游景区&city=昭苏&callnative=1" class="spot-link">夏塔古道景区</a>（仅20km）</span></div>
+<div class="row"><span class="time">8:00-8:15</span><span>🚗 75团→<a href="https://uri.amap.com/search?keyword=夏塔旅游景区&city=昭苏&callnative=1" class="spot-link">夏塔古道景区</a>（20km）</span></div>
 <div class="row"><span class="time">8:15-12:15</span><span>🏔️ 夏塔古道（80元/人，<b style="color:#58a6ff">人生必去！</b>）🥪自带午餐</span></div>
 <div class="row"><span class="time">13:30-14:30</span><span>🌿 <a href="https://uri.amap.com/search?keyword=喀拉盖云端草原&city=昭苏&callnative=1" class="spot-link">喀拉盖云端草原</a>（免费）</span></div>
 <div class="row"><span class="time">15:00-15:30</span><span>🌿 <a href="https://uri.amap.com/search?keyword=赛克云端草原&city=昭苏&callnative=1" class="spot-link">赛克云端草原</a>（免费）</span></div>
 <div class="row"><span class="time">16:30-17:30</span><span>🌀 <a href="https://uri.amap.com/search?keyword=特克斯八卦城&city=特克斯&callnative=1" class="spot-link">特克斯八卦城</a>·离街（免费）</span></div>
 <div class="row"><span class="time">17:30-18:30</span><span>🚗 特克斯→巩留（64km）</span></div>
 </div>
-<div class="note"><strong>📌 注意：</strong>夏塔上午去最好，光线斜射雪山最美。老人孩子走到温泉酒店即可。</div>
+<div class="note"><strong>📌 夏塔自驾票提前在官方公众号抢购（每天限量），抢不到则买普通门票+区间车80元/人。</strong></div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=巩留巷里拾光民宿&city=巩留&callnative=1" class="hotel-link">巩留巷里拾光民宿</a> × 5间</div>
+<div class="price-note">💰 约250元/间/晚（携程预订）</div>
 </div>
 </div>
 
+<!-- ====== D10 ====== -->
 <div class="page" id="d10" style="background-image:url(https://images.unsplash.com/photo-1455218873509-8097305ee378?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">10</span> D10 · 7月13日（周一）🌲库尔德宁→尼勒克 <span class="tag green">200km·轻松</span></div>
+<div class="section-title"><span class="num">10</span> D10·7月13日（周一）🌲库尔德宁→尼勒克 <span class="tag green">200km·轻松</span></div>
 <div class="card">
-<div class="meta"><span>🌲 库尔德宁（世界遗产）</span><span>🏨 尼勒克</span></div>
+<div class="meta"><span>🌲 库尔德宁（可线上购自驾票）</span><span>🏨 尼勒克清风假日 携程</span></div>
 <div class="timeline">
 <div class="row"><span class="time">8:00-9:00</span><span>🚗 巩留→<a href="https://uri.amap.com/search?keyword=库尔德宁自然保护区&city=巩留&callnative=1" class="spot-link">库尔德宁</a>（70km）</span></div>
 <div class="row"><span class="time">9:00-15:00</span><span>🌲 库尔德宁（30元，世界自然遗产）🥪自带午餐</span></div>
 <div class="row"><span class="time">15:00-17:30</span><span>🚗 库尔德宁→尼勒克（130km）</span></div>
 </div>
-<div class="note"><strong>📌 注意：</strong>库尔德宁比那拉提人少90%、便宜90%（那拉提300元/人）。齐梦德轻徒步30分钟。</div>
+<div class="note"><strong>📌 库尔德宁可线上购买自驾票（30元/人），比那拉提人少90%且便宜90%。</strong></div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=尼勒克清风假日酒店&city=尼勒克&callnative=1" class="hotel-link">尼勒克清风假日酒店</a> × 5间</div>
+<div class="price-note">💰 约350元/间/晚（携程预订）</div>
 </div>
 </div>
 
+<!-- ====== D11 ====== -->
 <div class="page" id="d11" style="background-image:url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">11</span> D11 · 7月14日（周二）🌿唐布拉→🏔️独库南段→库车 <span class="tag red">🔴430km·风景天花板</span></div>
+<div class="section-title"><span class="num">11</span> D11·7月14日（周二）🌿唐布拉→🏔️独库南段→库车 <span class="tag red">🔴430km·风景天花板</span></div>
 <div class="card">
-<div class="meta"><span>🌿 唐布拉百里画廊</span><span>🏔️ 独库南段</span><span>🏞️ 天山神秘大峡谷</span><span>🏨 库车</span></div>
+<div class="meta"><span>🌿 唐布拉百里画廊</span><span>🏔️ 独库南段（09:00-20:00通行）</span><span>🏨 星程库车 华住会</span></div>
 <div class="timeline">
 <div class="row"><span class="time">8:00-8:30</span><span>🚗 尼勒克→<a href="https://uri.amap.com/search?keyword=唐布拉百里画廊&city=尼勒克&callnative=1" class="spot-link">唐布拉百里画廊</a>入口</span></div>
 <div class="row"><span class="time">8:30-11:00</span><span>🌿 唐布拉百里画廊（130km免费景观公路）</span></div>
 <div class="row"><span class="time">11:00-11:30</span><span>🪦 <a href="https://uri.amap.com/search?keyword=乔尔玛烈士陵园&city=伊犁&callnative=1" class="spot-link">乔尔玛烈士陵园</a>（免费）</span></div>
-<div class="row"><span class="time">11:30-19:00</span><span>🛣️ <b>独库南段</b>：乔尔玛→那拉提→巴音布鲁克→铁力买提→大小龙池→<a href="https://uri.amap.com/search?keyword=天山神秘大峡谷&city=库车&callnative=1" class="spot-link">天山神秘大峡谷</a>→库车</span></div>
+<div class="row"><span class="time">11:30-19:00</span><span>🛣️<b>独库南段</b>：乔尔玛→那拉提→巴音布鲁克→铁力买提达坂→大小龙池→<a href="https://uri.amap.com/search?keyword=天山神秘大峡谷&city=库车&callnative=1" class="spot-link">天山神秘大峡谷</a>→库车</span></div>
 </div>
-<div class="alert"><strong>⚠️ 独库南段7月已开通✅ 传祺M8为7座车可通行✅</strong> 一日有四季，带齐衣物。晕车药必备！</div>
+<div class="alert"><strong>⚠️ 独库公路：09:00-20:00通行，7座及以下✅ 一日有四季，带齐衣物，晕车药必备！</strong></div>
 <div>🏨 <a href="https://uri.amap.com/search?keyword=星程酒店(库车天山中路店)&city=库车&callnative=1" class="hotel-link">星程酒店(库车天山中路店)</a> × 5间</div>
+<div class="price-note">💰 259元/间/晚（华住会·抖音团券518元/2晚，暂未开放，关注华住会小程序）</div>
 </div>
 </div>
 
+<!-- ====== D12 ====== -->
 <div class="page" id="d12" style="background-image:url(https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">12</span> D12 · 7月15日（周三）🏛️库车半日→🛣️天山隧道→乌鲁木齐 <span class="tag yellow">625km·全程高速</span></div>
+<div class="section-title"><span class="num">12</span> D12·7月15日（周三）🏛️库车半日→🛣️天山隧道→乌鲁木齐 <span class="tag yellow">625km·全程高速</span></div>
 <div class="card">
-<div class="meta"><span>🏛️ 库车热斯坦街</span><span>🛣️ 天山胜利隧道</span><span>🎉 庆功宴</span><span>🏨 乌鲁木齐（连住2晚）</span></div>
+<div class="meta"><span>🏛️ 库车老城（可打车游玩）</span><span>🛣️ 天山胜利隧道</span><span>🎉 庆功宴</span><span>🏨 汉庭乌市中营工 华住会·连住2晚</span></div>
 <div class="timeline">
-<div class="row"><span class="time">9:00-11:00</span><span>🏛️ <a href="https://uri.amap.com/search?keyword=库车热斯坦民俗街&city=库车&callnative=1" class="spot-link">库车热斯坦民俗街</a>（免费，彩色木门）</span></div>
+<div class="row"><span class="time">9:00-11:00</span><span>🏛️ <a href="https://uri.amap.com/search?keyword=库车热斯坦民俗街&city=库车&callnative=1" class="spot-link">库车热斯坦民俗街</a>（免费）</span></div>
 <div class="row"><span class="time">11:00-12:00</span><span>🍽️ 午餐+三车加满油</span></div>
 <div class="row"><span class="time">12:00-18:30</span><span>🚗 库车→<a href="https://uri.amap.com/search?keyword=天山胜利隧道&city=乌鲁木齐&callnative=1" class="spot-link">天山胜利隧道</a>→乌鲁木齐（625km全程高速）</span></div>
-<div class="row"><span class="time">20:00-21:30</span><span>🎉 <b>庆功宴！</b>（楼兰秘烤）</span></div>
+<div class="row"><span class="time">20:00-21:30</span><span>🎉<b>庆功宴！（楼兰秘烤）</b></span></div>
 </div>
-<div class="note"><strong>📌 天山胜利隧道（世界最长22km）20分钟穿天山！⏰ 12:00出发→18:30到乌市。</strong></div>
-<div>🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐中营工地铁站店)&city=乌鲁木齐&callnative=1" class="hotel-link">汉庭酒店(乌鲁木齐中营工地铁站店)</a> × 5间 · 连住2晚</div>
+<div class="note"><strong>📌 库车打车备选景点：</strong><a href="https://uri.amap.com/search?keyword=库车王府&city=库车&callnative=1" class="spot-link">库车王府</a>（55元）、<a href="https://uri.amap.com/search?keyword=库车大寺&city=库车&callnative=1" class="spot-link">库车大寺</a>（15元）、库车老城漫步。<br><b>天山胜利隧道全年开放，20分钟穿天山！</b></div>
+<div>🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐中营工地铁站店)&city=乌鲁木齐&callnative=1" class="hotel-link">汉庭酒店(乌鲁木齐中营工地铁站店)</a> × 5间·连住2晚</div>
+<div class="price-note">💰 259元/间/晚（华住会·抖音团券518元/2晚，暂未开放，关注华住会小程序）</div>
 </div>
 </div>
 
+<!-- ====== D13 ====== -->
 <div class="page" id="d13" style="background-image:url(https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">13</span> D13 · 7月16日（周四）🛍️休整·采购·还车 <span class="tag green">0km·休息</span></div>
+<div class="section-title"><span class="num">13</span> D13·7月16日（周四）🛍️休整·采购·还车 <span class="tag green">0km·休息</span></div>
 <div class="card">
-<div class="meta"><span>🚐 还车</span><span>🏛️ 新疆博物馆</span><span>🛍️ 华凌市场</span></div>
+<div class="meta"><span>🚐 12:00前还车</span><span>🏛️ 新疆博物馆</span><span>🛍️ 华凌市场</span></div>
 <div class="timeline">
-<div class="row"><span class="time">上午</span><span><b style="color:#ff7b72">🚨 2辆M8加满油、拍视频、还车</b></span></div>
-<div class="row"><span class="time">10:00-11:00</span><span>🏛️ <a href="https://uri.amap.com/search?keyword=新疆博物馆&city=乌鲁木齐&callnative=1" class="spot-link">新疆博物馆</a>（免费，需预约，看楼兰美女）</span></div>
-<div class="row"><span class="time">11:00-12:00</span><span>🛍️ <a href="https://uri.amap.com/search?keyword=华凌市场&city=乌鲁木齐&callnative=1" class="spot-link">华凌市场</a>（买干果，比大巴扎便宜30%）</span></div>
+<div class="row"><span class="time">上午</span><span><b style="color:#ff7b72">🚨 2辆M8加满油、拍视频、12:00前还车</b></span></div>
+<div class="row"><span class="time">13:00-14:00</span><span>🏛️ <a href="https://uri.amap.com/search?keyword=新疆博物馆&city=乌鲁木齐&callnative=1" class="spot-link">新疆博物馆</a>（免费，需预约，看楼兰美女）</span></div>
+<div class="row"><span class="time">14:00-15:00</span><span>🛍️ <a href="https://uri.amap.com/search?keyword=华凌市场&city=乌鲁木齐&callnative=1" class="spot-link">华凌市场</a>（买干果，比大巴扎便宜30%）</span></div>
+<div class="row"><span class="time">晚上</span><span>整理行李，准备明天返程</span></div>
 </div>
 <div class="alert"><strong>⚠️ 还车前加满油+拍视频避免纠纷。</strong> 博物馆需提前公众号预约（周四正常开放）。</div>
-<div>🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐中营工地铁站店)&city=乌鲁木齐&callnative=1" class="hotel-link">汉庭酒店(乌鲁木齐中营工地铁站店)</a> × 5间 · 连住第2晚</div>
+<div class="note"><strong>📌 乌鲁木齐打车备选景点：</strong><a href="https://uri.amap.com/search?keyword=红山公园&city=乌鲁木齐&callnative=1" class="spot-link">红山公园</a>（免费）、<a href="https://uri.amap.com/search?keyword=国际大巴扎&city=乌鲁木齐&callnative=1" class="spot-link">国际大巴扎</a>（免费）、<a href="https://uri.amap.com/search?keyword=人民公园&city=乌鲁木齐&callnative=1" class="spot-link">人民公园</a>（免费）</div>
+<div>🏨 <a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐中营工地铁站店)&city=乌鲁木齐&callnative=1" class="hotel-link">汉庭酒店(乌鲁木齐中营工地铁站店)</a> × 5间·连住第2晚</div>
 </div>
 </div>
 
+<!-- ====== D14 ====== -->
 <div class="page" id="d14" style="background-image:url(https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">14</span> D14 · 7月17日（周五）🚂返程 <span class="tag blue">返程</span></div>
+<div class="section-title"><span class="num">14</span> D14·7月17日（周五）🚂返程 <span class="tag blue">返程</span></div>
 <div class="card">
 <div class="timeline">
-<div class="row"><span class="time">下午</span><span>🚂 12人乌鲁木齐站→火车硬卧→武汉（32h，650元/人）</span></div>
+<div class="row"><span class="time">白天</span><span>自由活动/补买特产</span></div>
+<div class="row"><span class="time">17:00-18:00</span><span>🚕 打车前往乌鲁木齐站</span></div>
+<div class="row"><span class="time">晚上</span><span>🚂 13人乌鲁木齐站→火车硬卧→武汉（约32h，650元/人）</span></div>
 <div class="row"><span class="time"></span><span>🚗 另1车5人（吕杰组）自驾返程</span></div>
+</div>
+<div class="note"><strong>📌 建议提前3小时到火车站，所购特产中如有刀具须办理托运。</strong></div>
+</div>
+</div>
+
+<!-- ====== 公路通行时间汇总 ====== -->
+<div class="page" style="background-image:url(https://images.unsplash.com/photo-1470071459604-4b118ecb8b87?auto=format&fit=crop&w=1920&q=80)">
+<div class="section-title"><span class="num">🛣️</span> 公路通行时间总表</div>
+<div class="card">
+<table>
+<tr><th>公路</th><th>通行时间</th><th>车型限制</th><th>开放季节</th></tr>
+<tr><td><b>独库公路</b>（G217）</td><td><b>09:00-20:00</b></td><td>7座及以下✅ 传祺M8✅</td><td>6月-10月<br>7月已全线开通✅</td></tr>
+<tr><td><b>伊昭公路</b>（S237）</td><td><b>08:00-20:00</b></td><td>7座及以下✅ 传祺M8✅</td><td>5月-10月<br>7月已全线开通✅</td></tr>
+<tr><td><b>阿禾公路</b></td><td><b>全时段通行</b><br>（夏季）</td><td>12米以下客车✅</td><td>2025年6月30日开通<br>夏季全天开放✅</td></tr>
+<tr><td><b>天山胜利隧道</b>（G0711）</td><td><b>24小时</b></td><td>无限制✅</td><td>2025年12月开通<br>全年开放✅</td></tr>
+</table>
+</div>
+<div class="card">
+<div class="note"><strong>📌 重要提醒：</strong><br>
+• 独库·伊昭公路如遇恶劣天气可能临时管制，出发前关注"平安独库""伊犁交警"公众号<br>
+• 阿禾公路无需限时通行，但喀纳斯景区开放时间8:00-20:00<br>
+• 天山胜利隧道（世界最长22.13km）全年24小时开放，20分钟穿越天山</div>
+</div>
+</div>
+
+<!-- ====== 酒店价格明细表 ====== -->
+<div class="page" id="hotels" style="background-image:url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80)">
+<div class="section-title"><span class="num">📌</span> 酒店价格明细·预订渠道</div>
+<div class="card">
+<table>
+<tr><th>日期</th><th>酒店名称</th><th>单价</th><th>×间</th><th>小计</th><th>预订渠道</th></tr>
+<tr>
+<td>7/3</td>
+<td><a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐天山国际机场店)&city=乌鲁木齐&callnative=1">汉庭(乌鲁木齐天山国际机场店)</a></td>
+<td>259元</td><td>5</td><td style="text-align:right">1,295元</td>
+<td><span class="booking-tag booking-douyin">华住会·抖音团券 518元/2晚</span></td>
+</tr>
+<tr>
+<td>7/4</td>
+<td><a href="https://uri.amap.com/search?keyword=全季酒店(阿勒泰富蕴县迎宾东路店)&city=富蕴&callnative=1">全季酒店(阿勒泰富蕴县)</a></td>
+<td>259元</td><td>5</td><td style="text-align:right">1,295元</td>
+<td><span class="booking-tag booking-douyin">华住会·抖音团券 518元/2晚</span></td>
+</tr>
+<tr>
+<td>7/5</td>
+<td><a href="https://uri.amap.com/search?keyword=全季酒店(阿勒泰红墩路店)&city=阿勒泰&callnative=1">全季酒店(阿勒泰红墩路店)</a></td>
+<td>319元</td><td>5</td><td style="text-align:right">1,595元</td>
+<td><span class="booking-tag booking-douyin">华住会·抖音团券 638元/2晚</span></td>
+</tr>
+<tr>
+<td>7/6</td>
+<td><a href="https://uri.amap.com/search?keyword=喀纳斯一朵莲民宿&city=布尔津&callnative=1">喀纳斯一朵莲民宿</a></td>
+<td>约450元</td><td>5</td><td style="text-align:right">2,250元</td>
+<td><span class="booking-tag booking-xiecheng">携程预订</span></td>
+</tr>
+<tr>
+<td>7/7</td>
+<td><a href="https://uri.amap.com/search?keyword=布尔津岸芷汀兰假日酒店&city=布尔津&callnative=1">布尔津岸芷汀兰假日酒店</a></td>
+<td>约250元</td><td>5</td><td style="text-align:right">1,250元</td>
+<td><span class="booking-tag booking-xiecheng">携程预订</span></td>
+</tr>
+<tr>
+<td>7/8</td>
+<td><a href="https://uri.amap.com/search?keyword=海友酒店(乌苏九莲泉公园店)&city=乌苏&callnative=1">海友乌苏市九莲泉公园酒店</a></td>
+<td>179元</td><td>5</td><td style="text-align:right">895元</td>
+<td><span class="booking-tag booking-douyin">华住会·抖音团券 358元/2晚</span></td>
+</tr>
+<tr>
+<td>7/9</td>
+<td rowspan="2"><a href="https://uri.amap.com/search?keyword=汉庭酒店(伊宁喀赞其景区店)&city=伊宁&callnative=1">汉庭酒店(伊宁喀赞其景区店)</a></td>
+<td rowspan="2">309元</td><td rowspan="2">5</td><td style="text-align:right">1,545元</td>
+<td rowspan="2"><span class="booking-tag booking-douyin">华住会·抖音团券 618元/2晚</span></td>
+</tr>
+<tr><td>7/10</td><td style="text-align:right">1,545元</td></tr>
+<tr>
+<td>7/11</td>
+<td><a href="https://uri.amap.com/search?keyword=长亭古道·雪山观景酒店&city=昭苏&callnative=1">长亭古道·雪山观景酒店(75团)</a></td>
+<td>约250元</td><td>5</td><td style="text-align:right">1,250元</td>
+<td><span class="booking-tag booking-xiecheng">携程预订</span></td>
+</tr>
+<tr>
+<td>7/12</td>
+<td><a href="https://uri.amap.com/search?keyword=巩留巷里拾光民宿&city=巩留&callnative=1">巩留巷里拾光民宿</a></td>
+<td>约250元</td><td>5</td><td style="text-align:right">1,250元</td>
+<td><span class="booking-tag booking-xiecheng">携程预订</span></td>
+</tr>
+<tr>
+<td>7/13</td>
+<td><a href="https://uri.amap.com/search?keyword=尼勒克清风假日酒店&city=尼勒克&callnative=1">尼勒克清风假日酒店</a></td>
+<td>约350元</td><td>5</td><td style="text-align:right">1,750元</td>
+<td><span class="booking-tag booking-xiecheng">携程预订</span></td>
+</tr>
+<tr>
+<td>7/14</td>
+<td><a href="https://uri.amap.com/search?keyword=星程酒店(库车天山中路店)&city=库车&callnative=1">星程酒店(库车天山中路店)</a></td>
+<td>259元</td><td>5</td><td style="text-align:right">1,295元</td>
+<td><span class="booking-tag booking-douyin">华住会·抖音团券 518元/2晚</span></td>
+</tr>
+<tr>
+<td>7/15</td>
+<td rowspan="2"><a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐中营工地铁站店)&city=乌鲁木齐&callnative=1">汉庭酒店(乌鲁木齐中营工地铁站店)</a></td>
+<td rowspan="2">259元</td><td rowspan="2">5</td><td style="text-align:right">1,295元</td>
+<td rowspan="2"><span class="booking-tag booking-douyin">华住会·抖音团券 518元/2晚</span></td>
+</tr>
+<tr><td>7/16</td><td style="text-align:right">1,295元</td></tr>
+<tr style="background:#1c2333"><td colspan="4"><b>住宿合计</b></td><td style="text-align:right;font-weight:700;color:#7ee787"><b>19,805元</b></td><td></td></tr>
+</table>
+<div style="font-size:12px;color:#8b949e;margin-top:8px">
+<span class="booking-tag booking-douyin">华住会·抖音团券</span> 汉庭/全季/海友/星程属华住会旗下，可在抖音搜索"华住会"团购优惠券<br>
+<span class="booking-tag booking-xiecheng">携程预订</span> 民宿建议在携程提前预订，7月旺季价格可能上浮
 </div>
 </div>
 </div>
@@ -464,42 +585,20 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 <div class="section-title"><span class="num">🗺️</span> 全程路线总览</div>
 <div class="card">
 <div style="background:#1c2333;border-radius:10px;padding:14px;font-size:13px;line-height:2.2;border:1px solid #30363d;font-family:monospace">
-乌鲁木齐 → 富蕴(500km) → 阿勒泰(280km)<br>
-→ 🛣️阿禾公路→禾木·贾登峪(310km)<br>
-→ 🏔️喀纳斯→布尔津(180km)<br>
-→ 🌋安集海→乌苏(550km)<br>
-→ 💧赛里木湖→伊宁(430km)<br>
-→ 🏠伊宁休整<br>
-→ 🛣️伊昭公路→昭苏75团(200km)<br>
-→ 🏔️夏塔→云端草原→巩留(237km)<br>
-→ 🌲库尔德宁→尼勒克(200km)<br>
-→ 🌿唐布拉→🏔️独库南段→库车(430km)<br>
-→ 🛣️天山隧道→乌鲁木齐(625km)<br>
-→ 🚂返程
+乌鲁木齐→富蕴(500km) <span style="color:#58a6ff">→</span> 阿勒泰(280km)<br>
+<span style="color:#58a6ff">→</span> 🛣️阿禾公路→禾木·贾登峪(310km)<br>
+<span style="color:#58a6ff">→</span> 🏔️喀纳斯→布尔津(180km)<br>
+<span style="color:#58a6ff">→</span> 🌋安集海→乌苏(550km)<br>
+<span style="color:#58a6ff">→</span> 💧赛里木湖→伊宁(430km)<br>
+<span style="color:#58a6ff">→</span> 🏠伊宁休整<br>
+<span style="color:#58a6ff">→</span> 🛣️伊昭公路→昭苏75团(200km)<br>
+<span style="color:#58a6ff">→</span> 🏔️夏塔→云端草原→巩留(237km)<br>
+<span style="color:#58a6ff">→</span> 🌲库尔德宁→尼勒克(200km)<br>
+<span style="color:#58a6ff">→</span> 🌿唐布拉→🏔️独库南段→库车(430km)<br>
+<span style="color:#58a6ff">→</span> 🛣️天山隧道→乌鲁木齐(625km)<br>
+<span style="color:#58a6ff">→</span> 🚂返程
 </div>
 <div style="margin-top:8px;font-size:15px;color:#58a6ff;font-weight:600">全程约3,850km · 不走回头路 ✅</div>
-</div>
-</div>
-
-<!-- ====== 导航汇总 ====== -->
-<div class="page" id="hotels" style="background-image:url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80)">
-<div class="section-title"><span class="num">📌</span> 酒店导航汇总（点击即跳转高德APP）</div>
-<div class="card">
-<table>
-<tr><th>日期</th><th>酒店</th></tr>
-<tr><td>7/3</td><td><a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐天山国际机场店)&city=乌鲁木齐&callnative=1">汉庭酒店(乌鲁木齐天山国际机场店)</a></td></tr>
-<tr><td>7/4</td><td><a href="https://uri.amap.com/search?keyword=全季酒店(阿勒泰富蕴县迎宾东路店)&city=富蕴&callnative=1">全季酒店(阿勒泰富蕴县迎宾东路店)</a></td></tr>
-<tr><td>7/5</td><td><a href="https://uri.amap.com/search?keyword=全季酒店(阿勒泰红墩路店)&city=阿勒泰&callnative=1">全季酒店(阿勒泰红墩路店)</a></td></tr>
-<tr><td>7/6</td><td><a href="https://uri.amap.com/search?keyword=贾登峪悦已禾院民宿&city=布尔津&callnative=1">贾登峪悦已禾院民宿</a></td></tr>
-<tr><td>7/7</td><td><a href="https://uri.amap.com/search?keyword=布尔津岸芷汀兰假日酒店&city=布尔津&callnative=1">布尔津岸芷汀兰假日酒店</a></td></tr>
-<tr><td>7/8</td><td><a href="https://uri.amap.com/search?keyword=海友酒店(乌苏九莲泉公园店)&city=乌苏&callnative=1">海友乌苏市九莲泉公园酒店</a></td></tr>
-<tr><td>7/9-10</td><td><a href="https://uri.amap.com/search?keyword=汉庭酒店(伊宁喀赞其景区店)&city=伊宁&callnative=1">汉庭酒店(伊宁喀赞其景区店)</a>（连住2晚）</td></tr>
-<tr><td>7/11</td><td><a href="https://uri.amap.com/search?keyword=长亭古道·雪山观景酒店&city=昭苏&callnative=1">长亭古道·雪山观景酒店(75团)</a></td></tr>
-<tr><td>7/12</td><td><a href="https://uri.amap.com/search?keyword=巩留巷里拾光民宿&city=巩留&callnative=1">巩留巷里拾光民宿</a></td></tr>
-<tr><td>7/13</td><td><a href="https://uri.amap.com/search?keyword=尼勒克清风假日酒店&city=尼勒克&callnative=1">尼勒克清风假日酒店</a></td></tr>
-<tr><td>7/14</td><td><a href="https://uri.amap.com/search?keyword=星程酒店(库车天山中路店)&city=库车&callnative=1">星程酒店(库车天山中路店)</a></td></tr>
-<tr><td>7/15-16</td><td><a href="https://uri.amap.com/search?keyword=汉庭酒店(乌鲁木齐中营工地铁站店)&city=乌鲁木齐&callnative=1">汉庭酒店(乌鲁木齐中营工地铁站店)</a>（连住2晚）</td></tr>
-</table>
 </div>
 </div>
 
@@ -508,20 +607,22 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 <div class="section-title"><span class="num">⚠️</span> 重要提示</div>
 <div class="card">
 <table>
-<tr><td>🛣️ 独库公路</td><td>7月已全线开通✅ 传祺M8为7座车符合规定</td></tr>
-<tr><td>🛣️ 伊昭公路</td><td>7月已开通✅ 9:00-21:00通行</td></tr>
-<tr><td>🛣️ 阿禾公路</td><td>2025年新开✅ 9:30-15:00通行</td></tr>
-<tr><td>🛣️ 天山胜利隧道</td><td>2025年12月开通✅ 全年开放</td></tr>
+<tr><td>🛣️ 独库公路</td><td>09:00-20:00通行·7座及以下✅</td></tr>
+<tr><td>🛣️ 伊昭公路</td><td>08:00-20:00通行·7座及以下✅</td></tr>
+<tr><td>🛣️ 阿禾公路</td><td>夏季全时段通行·12米以下客车✅</td></tr>
+<tr><td>🛣️ 天山胜利隧道</td><td>24小时通行·无限制✅</td></tr>
 <tr><td>⛽ 加油</td><td><b style="color:#ff7b72">🚨阿禾公路无加油站！D2晚阿勒泰加满油！</b></td></tr>
 <tr><td>🧥 衣物</td><td>白天35℃+ / 独库夏塔5-15℃，带齐夏冬装</td></tr>
-<tr><td>🕐 时差</td><td>新疆与内地2小时时差（22:00天黑）</td></tr>
-<tr><td>🗺️ 离线地图</td><td>独库公路、阿禾公路部分路段无信号</td></tr>
-<tr><td>☀️ 防晒</td><td>SPF50+防晒霜、墨镜、宽檐帽必备</td></tr>
+<tr><td>🕐 时差</td><td>新疆与内地2h时差（22:00天黑，10:00上班）</td></tr>
+<tr><td>🗺️ 离线地图</td><td>独库·阿禾信号差，提前下载高德离线地图</td></tr>
+<tr><td>☀️ 防晒</td><td>SPF50+防晒霜·墨镜·宽檐帽必备</td></tr>
+<tr><td>🎫 预约</td><td>喀纳斯·新疆博物馆需提前公众号预约</td></tr>
+<tr><td>🏨 酒店券</td><td>华住会旗下（汉庭/全季/海友/星程）可在抖音团券<br>民宿在携程提前预订</td></tr>
 </table>
 </div>
 <div style="text-align:center;padding:24px 0;color:#8b949e;font-size:13px">
 🚗 祝旅途愉快，一路顺风！🎉<br>
-2026新疆家庭自驾游 · 北疆大环线
+2026新疆家庭自驾游 · 北疆大环线 · 三车18人（13+5）
 </div>
 </div>
 
@@ -529,12 +630,12 @@ th{background:#1c2333;color:#8b949e;font-weight:600}
 
 <script>
 function toggleMenu(){
-    document.getElementById('sidebar').classList.toggle('open');
-    document.getElementById('overlay').classList.toggle('show');
+document.getElementById('sidebar').classList.toggle('open');
+document.getElementById('overlay').classList.toggle('show');
 }
 function closeMenu(){
-    document.getElementById('sidebar').classList.remove('open');
-    document.getElementById('overlay').classList.remove('show');
+document.getElementById('sidebar').classList.remove('open');
+document.getElementById('overlay').classList.remove('show');
 }
 </script>
 
